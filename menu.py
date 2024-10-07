@@ -2,19 +2,19 @@ from validates import *
 
 def cargar_producto(inventario:list)->list:
     '''
-    Carga un nuevo producto al invetario.
+    Carga un nuevo producto al inventario.
     Parametro: inventario (list)
     Retorno: inventario (list)
     '''
+    print("\n-AGREGAR PRODUCTO-")
     nombre_producto = input("Ingrese el producto a cargar: ")
     precio_producto = input("Ingrese el precio: ")
     precio_producto = validar_numero_positivo(precio_producto)
     cantidad_producto = input("Ingrese la cantidad: ")
     cantidad_producto = validar_numero_positivo(cantidad_producto)
 
-
     inventario.append([nombre_producto,precio_producto,cantidad_producto])
-    print(inventario)
+    print("PRODUCTO AGREGADO")
     return inventario
 
 

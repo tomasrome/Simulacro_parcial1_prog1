@@ -1,5 +1,5 @@
 from menu import *
-from validates import *
+from validates import validar_menu
 
 inventario = [
     ["Laptop", 1500.00, 10],
